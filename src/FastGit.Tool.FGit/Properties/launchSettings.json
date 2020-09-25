@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FastGit.Tool.FGit": {
+      "commandName": "Project",
+      "commandLineArgs": "clone https://github.com/FastGitORG/fgit-nodejs.git"
+    }
+  }
+}
