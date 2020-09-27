@@ -1,5 +1,4 @@
 ﻿# FastGit.Tool.FGit
-# FastGit.Tool.FGit
 
 [![NuGet][main-nuget-badge]][main-nuget]
 
@@ -18,12 +17,9 @@ dotnet tool install -g fgit
 
 ## Usage
 
-```text
-TODO
-```
+All commands and behaviors are exactly the same as the original git except for the clone command.
 
-## Example
-
-```text
-TODO
+```bash
+fgit clone https://github.com/FastGitORG/www
 ```
+It will be replaced with the FastGit source.
