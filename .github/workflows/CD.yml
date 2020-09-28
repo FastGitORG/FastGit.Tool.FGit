@@ -20,7 +20,7 @@ jobs:
         dotnet-version: 3.1
 
     - name: Pack
-      run: dotnet pack src/FastGit.Tool.FGit/FastGit.Tool.FGit.csproj --configuration Release
+      run: dotnet pack src/FastGit.Tool.FGit/FastGit.Tool.FGit.csproj --configuration Release -o .
 
     - name: Deploy
       run: dotnet nuget push *.nupkg -s nuget.org -k ${{ secrets.NUGET_API_KEY }}
