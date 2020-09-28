@@ -1,0 +1,26 @@
+name: CD
+
+on:
+  push:
+    tags:
+    - '*'
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v1.4.0
+      with:
+        dotnet-version: 2.1
+
+    - name: Pack
+      run: dotnet pack src/FastGit.Tool.FGit/FastGit.Tool.FGit.csproj --configuration Release
+
+    - name: Deploy
+      run: dotnet nuget push *.nupkg -s nuget.org -k ${{ secrets.NUGET_API_KEY }}
