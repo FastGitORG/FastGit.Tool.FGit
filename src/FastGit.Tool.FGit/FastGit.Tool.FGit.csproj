@@ -9,7 +9,6 @@
     <Authors>Rwing</Authors>
     <Product>FastGit.Tool.FGit</Product>
     <Version>0.0.1</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>FastGit.Tool.FGit</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Rwing/FastGit.Tool.FGit</PackageProjectUrl>
