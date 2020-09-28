@@ -21,10 +21,13 @@ namespace FastGit.Tool.FGit
             {
                 args = ReorganizeArgs(args);
             }
-            using var stdOut = Console.OpenStandardOutput();
-            using var stdErr = Console.OpenStandardError();
-            var cmd = Cli.Wrap("git").WithArguments(args).WithValidation(CommandResultValidation.None) | (stdOut, stdErr);
-            await cmd.ExecuteAsync();
+            using (var stdOut = Console.OpenStandardOutput())
+            using (var stdErr = Console.OpenStandardError())
+            {
+                var cmd = Cli.Wrap("git").WithArguments(args).WithValidation(CommandResultValidation.None) |
+                          (stdOut, stdErr);
+                await cmd.ExecuteAsync();
+            }
         }
 
         private string[] ReorganizeArgs(string[] args)
