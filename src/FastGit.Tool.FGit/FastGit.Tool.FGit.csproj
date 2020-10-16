@@ -9,11 +9,11 @@
     <PackageId>fgit</PackageId>
     <Authors>Rwing</Authors>
     <Product>FastGit.Tool.FGit</Product>
-    <Version>0.0.1</Version>
+    <Version>0.1.1</Version>
     <Description>fgit is a .net global tool to do git operation with fastgit</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Rwing/FastGit.Tool.FGit</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/FastGit.Tool.FGit</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Rwing/FastGit.Tool.FGit</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
