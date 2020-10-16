@@ -17,9 +17,14 @@ dotnet tool install -g fgit
 
 ## Usage
 
-All commands and behaviors are exactly the same as the original git except for the clone command.
+All commands and behaviors are exactly the same as the original git except for the `clone` command.
 
 ```bash
 fgit clone https://github.com/FastGitORG/www
 ```
 It will be replaced with the FastGit source.
+
+
+## TODO
+
+* [ ] using the FastGit source for `pull/push` commands
