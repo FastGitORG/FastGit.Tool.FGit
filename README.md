@@ -27,4 +27,4 @@ It will be replaced with the FastGit source.
 
 ## TODO
 
-* [ ] using the FastGit source for `pull/push` commands
+* [ ] using the FastGit source for `pull/push/submodule update` commands
